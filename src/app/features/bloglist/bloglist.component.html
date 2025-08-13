@@ -1,0 +1,4 @@
+<h1>This is a list of all our blogs</h1>
+@for (blog of blogs; track blog.id) {
+  <p routerLink="/blog-details/{{blog.id}}">{{blog.id}}: {{blog.name}}</p>
+}
